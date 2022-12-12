@@ -1,0 +1,26 @@
+*
+{
+    transition: background-color 0.5s ease ,
+                color 0.5s ease;
+}
+body{
+    --bg: #f1faee;
+    --bg-primary:#a8dadc;
+    --bg-secondary:#e63946 ;
+    --bg-form:rgba(218, 216, 216, 0.767);
+    --f-color :black;
+}
+.DarkMode 
+{
+    --bg: #000000;
+    --bg-primary: #323232;
+    --bg-secondary: #0f0d30;
+    --bg-tertiary: #7c162e;
+    --bg-quaternary: #191528;
+    --bg-form:rgba(86, 86, 86, 0.615);
+    --f-color: white;
+}
+body
+{
+    background-color: var(--bg);
+}

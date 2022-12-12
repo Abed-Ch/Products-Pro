@@ -1,0 +1,15 @@
+@use 'sass:math';
+@use 'sass:string';
+
+@function rem($pixel)
+{
+    @if math.is-unitless($pixel){
+        @return math.div($pixel,16) + rem ;
+    }@else{
+        @return math.div(stripUnit($pixel),16)+rem ;
+    }
+}
+
+@function stripUnit($Number){
+    @return math.div($Number,($Number * 0 + 1)) ;
+}

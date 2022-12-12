@@ -1,0 +1,9 @@
+@forward 'globals';
+@forward 'utilities';
+@forward 'Components';
+
+.Error{
+    background: url('../404.svg') no-repeat center;
+    width: 100%;
+    height: 100vh;
+}

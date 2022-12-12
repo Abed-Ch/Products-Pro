@@ -1,0 +1,46 @@
+@use 'math' as m ;
+
+.p-sm
+{
+    font-size: clamp( m.rem(13.28) , 0.34vw + m.rem(11.52) , m.rem(16) ) !important;
+}
+
+.p-base
+{
+    font-size: clamp( m.rem(16) , 0.43vw + m.rem(13.92) , m.rem(19.2) ) !important;
+}
+
+.p-lg
+{
+    font-size: clamp( m.rem(19.2) , .54vw + m.rem(16.64) , m.rem(23.04) ) !important;
+}
+
+.h6
+{
+    font-size: clamp( m.rem(23.04) , 0.67vw + m.rem(20) , m.rem(27.68) ) !important;
+}
+
+.h5
+{
+    font-size: clamp( m.rem(27.68) , 0.82vw + m.rem(24) , m.rem(33.12) ) !important;
+}
+
+.h4
+{
+    font-size: clamp( m.rem(33.12) , 1.01vw + m.rem(29.8) , m.rem(37.36) ) !important;
+}
+
+.h3
+{
+    font-size: clamp( m.rem(37.36) , 1.23vw + m.rem(34.56) , m.rem(41.6) ) !important;
+}
+
+.h2
+{
+    font-size: clamp( m.rem(41.6) , 1.35vw + m.rem(36.8) , m.rem(45.9) ) !important;
+}
+
+.h1
+{
+    font-size: clamp( m.rem(45.9) , 1.57vw + m.rem(39.2) , m.rem(53.8) ) !important;
+}

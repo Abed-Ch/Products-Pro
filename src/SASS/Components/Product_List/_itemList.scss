@@ -1,0 +1,33 @@
+@use '../../utilities' as u ;
+.Product-Container
+{
+    margin-top: 5rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow-y: hidden;
+}
+.Product-Item
+{
+    padding: 1rem;
+    flex: 1 1 u.rem(200);
+    max-width: u.rem(250);
+    margin: u.rem(10);
+    text-align: center;
+    background-color: var(--bg-primary);
+    color: var(--f-color);
+    line-height: 1.5rem;
+    border-radius: u.rem(10);
+    position: relative;
+    &__Checkbox
+    {
+        position: absolute;
+        top: u.rem(18);
+        left: u.rem(18);
+        width: u.rem(20);
+        height: u.rem(20);
+    }
+}

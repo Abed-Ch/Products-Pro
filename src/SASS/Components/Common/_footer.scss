@@ -1,0 +1,29 @@
+@use '../../utilities' as u;
+
+.Footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid gray;
+    flex-direction: column;
+    padding: 1.5rem;
+    max-height: 15rem;
+    width: 100%;
+    color: var(--f-color);
+
+    &__Title,
+    &__Author {
+        margin: 1rem;
+        @extend .p-sm;
+    }
+
+    &__Icons {
+        display: flex;
+        justify-content: space-around;
+        width: 6rem;
+        font-size: 1.25rem;
+        margin: 1rem;
+        cursor: pointer;
+    }
+}
