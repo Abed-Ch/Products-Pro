@@ -11,11 +11,17 @@ On the new product page the fields for the products are displayed, the form inpu
 Languages and frameworks used : 
 
 Front End :
+
   1-React.js
+  
   2-SASS
+  
 Back End :
+
   PHP (OOP)
+  
 Database :
+
   MySQL (PHPmyAdmin)
 
 To access the website :
