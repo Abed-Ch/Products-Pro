@@ -1,0 +1,17 @@
+.card {
+    width: 100%;
+    background-color: var(--bg-primary) !important;
+
+    .card-image-top {
+        font-size: 6rem;
+        color: var(--f-color)
+    }
+    .card-title{
+        color: var(--f-color);
+    }
+    .list-group,
+    .list-group-item {
+        color: var(--f-secondary) !important;
+        background-color: var(--bg-primary) !important;
+    }
+}

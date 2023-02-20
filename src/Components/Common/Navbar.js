@@ -19,15 +19,29 @@ export default class Navbar extends React.Component {
     }
     render() {
         return (
-            <nav>
-                <div className="nav-title h4">{this.state.Path === "/" ? "Product List" : "Add Product"}</div>
-                <ul className="Navbar">
-                    {this.state.Path === "/" && <><li><Link to="/addproduct" className="nav-btn add" id="Add-New-Product">ADD</Link></li>
-                        <li><button className="nav-btn delete" id="delete-product-btn" onClick={this.props.toggleDel}>MASS DELETE</button></li></>}
-                    {this.state.Path === "/addproduct" && <><li><button className="nav-btn save" onClick={this.props.Save} id="Save-Product">Save</button></li>
-                        <li><Link to="/" className="nav-btn cancel" id="Cancel-Product" onClick={this.props.CancelProduct}>Cancel</Link></li></>}
-                    <li onClick={this.props.toggleDark}>{this.props.DarkMode && <BsSun />}{!this.props.DarkMode && <BsFillMoonFill />}</li>
-                </ul>
+            <nav className="navbar navbar-expand-md ">
+                <div className="container-fluid">
+                    <a className="navbar-brand">Products Pro</a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav mb-2 mb-md-0 ms-md-auto">
+                            {this.state.Path === '/' && <li className="nav-item">
+                                <Link className="nav-link active" to="/addproduct">Add Product</Link>
+                            </li>}
+                            {this.state.Path === "/addproduct" && <> <li className="nav-item" onClick={this.props.Save}>
+                                <a className="nav-link active" href="#">Save</a>
+                            </li>
+                                <li className="nav-item" onClick={this.props.CancelProduct}>
+                                    <Link className="nav-link active" to="/">Cancel</Link>
+                                </li></>}
+                            <li className="nav-item" onClick={this.props.toggleDark}>
+                                <a className="nav-link" href="#">{this.props.DarkMode ? <BsSun /> : <BsFillMoonFill />}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         )
     }

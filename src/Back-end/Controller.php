@@ -40,7 +40,6 @@ class Controller extends Database{
         return $add ;
     }
     private function DeleteProducts($IDarray){
-        print_r($IDarray);
         return $this -> deleteProduct($IDarray);
     }
     private function GetAll(){

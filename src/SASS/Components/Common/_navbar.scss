@@ -1,49 +1,7 @@
 @use '../../utilities' as m ;
-nav
-{
-    padding: m.rem(12) ;
-    position: fixed;
-    top: 0;
-    width: 100%;
+.navbar{
     background-color: var(--bg-secondary);
-    display: flex;
-    flex-direction: row;
-    color: var(--f-color);
-    z-index: 1;
-}
-.Navbar
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-
-}
-.nav-title
-{
-    margin-right: auto;
-    padding: m.rem(6px);
-}
-.nav-btn
-{
-    padding: m.rem(10) m.rem(16);
-    border-radius: m.rem(1000);
-    background-color:  var(--bg-primary);
-    margin-left: m.rem(12);
-    margin-right: m.rem(12);
-    cursor: pointer;
-    border: 3px solid var(--bg-primary);
-
-}
-
-.nav-btn:hover
-{
-    border: 3px solid var(--bg-primary);
-    background-color: transparent;
-}
-.Navbar li:last-child
-{
-    font-size: m.rem(26);
-    transform: translate(0, 10%);
-    cursor: pointer;
+    .nav-link, .navbar-brand{
+        color: var(--f-color);
+    }
 }

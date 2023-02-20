@@ -17,10 +17,10 @@ export default async function FetchFunction(fetchMethod, fetchdata = null) {
                 },
                 body: JSON.stringify(fetchdata)
             });
-            
-            let arr = [FetchData,FetchData.status];
-            return arr ;
-        default :
-        break; 
+
+            let arr = [FetchData, FetchData.status];
+            return arr;
+        default:
+            break;
     }
 }
