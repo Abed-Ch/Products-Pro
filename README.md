@@ -1,13 +1,32 @@
-This is the code for a job skill evaluation project for Scandiweb Junior developer role.
+#Products Pro
+<hr/>
 
-The project is simply a page containing product of diffrent types ( DVD, Book, Furniture ),
-each product conatains a unique SKU, a name, a price, and specs depending on the product type.
+##About
 
-The index page displays all product, each product has a checkbox that can be checked for deleting (multiple at once allowed), on the navbar the delete button that will delete the products that are cheked, a add product button that will navigate to the add new product page, and a Light/Dark Mode icon.
+This Aplication is a simple crud app. Its a products application where the user can create, read and delete a product.
 
-On the new product page the fields for the products are displayed, the form inputs have floating form labels made purely with sass (no bootstrap), when submitting if a field is missing or the SKU is already in use errors will be displayes accordingly.
+###Main Page
 
+On the main page we get the products list, the items are displayed in order of insertion. We have a total of 3 product types (A Book, A DVD, Furniture).
+Each Product has its own unique Attribute (Book -> Pages, Furniture -> Dimensions, DVD -> Runtime). Lastly each product card has a delete button that will delete the product (For maintaining a presentable index page, the products wont be deleted).
+<br/>
+<p width=100%" height="400px" align="center"><img src="https://github.com/Abed-Ch/Products-Pro/edit/main/Images/Products.png" /></p>
+<br/>
+<hr/>
+###Add Product Page
 
+The Other page we have in this app is a Add Product Form, the user will add the product details, and if products criteria's are met, the product will be added to the products list.
+<br/>
+<p width=100%" height="400px" align="center"><img src="https://github.com/Abed-Ch/Products-Pro/edit/main/Images/Form.png" /></p>
+<br/>
+<hr/>
+###Dark Mode
+
+Lastly, The app has a Light mode / Dark Mode feature. The icon can be found on the navbar(Moon icon when in Light Mode, Sun icon when in Dark mode)
+<br/>
+<p width=100%" height="400px" align="center"><img src="https://github.com/Abed-Ch/Products-Pro/edit/main/Images/Dark.png" /></p>
+<br/>
+<hr/>
 Languages and frameworks used : 
 
 Front End :
